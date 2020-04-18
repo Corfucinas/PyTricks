@@ -21,13 +21,12 @@ print(list(a))
 
 """using the list.copy() method (python3 only)"""
 
+a = [1, 2, 3, 4, 5]
 if sys.version_info.major == 3:
-    a = [1, 2, 3, 4, 5]
     print(a.copy())
 else:
     # in python2 there exists the `copy` builtin module
     from copy import copy
-    a = [1, 2, 3, 4, 5]
     print(copy(a))
 
 

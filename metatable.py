@@ -15,7 +15,7 @@ class metatable(defaultdict):
 
 
 def fib(d, n):
-    if n == 0 or n == 1:
+    if n in [0, 1]:
         return n
     return d[n - 1] + d[n - 2]
 
